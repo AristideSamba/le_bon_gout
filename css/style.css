@@ -1,0 +1,42 @@
+@import url(./reset.css);
+
+:root{
+    --orange-color: #AE1B00;
+    --yellow-color: #F8B60E;
+    --white-color: #FFFFFF;
+    --black-color: #272627;;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+header figcaption{
+    position: absolute;
+    width: 200px;
+    top: 10px;
+    left: 5%;
+}
+header figcaption img{
+    width: 100%;
+}
+header nav{
+    position: absolute;
+    right: 5%;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+header nav ul .separateur{
+    width: 1px;
+    height: 15px;
+    background-color: var(--black-color);
+}
