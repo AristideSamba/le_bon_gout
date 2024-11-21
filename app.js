@@ -3,6 +3,8 @@ let items = carousel.querySelectorAll('.list .item');
 let dots = document.querySelectorAll('.carousel .dots li');
 let prev = document.getElementById('prev');
 let next = document.getElementById('next');
+const menu = document.querySelector('.burger-menu');
+const navMenu = document.querySelector(' nav');
 
 let active = 0;
 let firstPosition = 0;
@@ -12,7 +14,7 @@ const startAutoPlay = () =>{
     clearInterval(autoPlay);
     autoPlay = setInterval(() =>{
         next.click();
-    }, 5000)
+    }, 10000)
 }
 startAutoPlay();
 
@@ -51,3 +53,13 @@ setSlider();
         setSlider();
     }
  })
+
+ menu.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    navMenu.classList.toggle("active");
+ })
+
+ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    menu.classList.remove("active");
+    navMenu.classList.remove("active");
+ }))
