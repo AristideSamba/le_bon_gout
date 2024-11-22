@@ -383,7 +383,12 @@ footer p{
         border-radius: 0;
     }
     .buttons{
-        top: 53%;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .buttons button{
+        color: var(--yellow-color);
     }
     .carousel figure img{
         width: 100%;
@@ -397,7 +402,9 @@ footer p{
         font-size: 3rem;
     }
     .item .commander{
-        left: 13%;
+        top: 63%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .content h2{
         font-size: 2rem
@@ -425,12 +432,7 @@ footer p{
 }
 /*plus petits ecrans*/
 @media screen and (max-width: 400px){
-    .buttons{
-        top: 65%;
-    }
-    .item .commander{
-        left: 6.5%;
-    }
+
     header nav .btn-command{
         margin-top: 70%;
     }
