@@ -1,10 +1,11 @@
+const menu = document.querySelector('.burger-menu');
+const navMenu = document.querySelector(' nav');
 let carousel = document.querySelector('.carousel');
 let items = carousel.querySelectorAll('.list .item');
 let dots = document.querySelectorAll('.carousel .dots li');
 let prev = document.getElementById('prev');
 let next = document.getElementById('next');
-const menu = document.querySelector('.burger-menu');
-const navMenu = document.querySelector(' nav');
+
 
 let active = 0;
 let firstPosition = 0;
