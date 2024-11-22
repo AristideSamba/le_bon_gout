@@ -1,0 +1,85 @@
+@import url(./style.css);
+
+/*Aside*/
+.première-section{
+    display: flex;
+    gap: 40px;
+}
+.première-section aside{
+    width: 25%;
+    background-color: var(--orange-color);
+
+}
+
+.première-section aside h2{
+    font-family: 'Pecita', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    background-color: #a01900;
+    color: var(--white-color);
+    margin-bottom: 30px;
+    text-align: center;
+}
+.première-section aside .aside-nav{
+    margin-left: 12%;
+}
+.première-section aside .aside-nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+aside .aside-nav ul a{
+    color: var(--white-color);
+    transition: ease-in-out .3s ;
+}
+aside .aside-nav ul a:hover{
+    color: var(--yellow-color);
+    transition: ease-in-out .3s ;
+}
+.description-menu h1{
+    font-family: 'Pecita', sans-serif;
+    font-size: 4rem;
+}
+.img-menu{
+    display: flex;
+    gap: 30px;
+}
+.img-menu figure{
+    width: 300px;
+    height: 300px;
+    margin-top: 25px;
+}
+.img-menu figure p{
+    text-align: center;
+}
+.img-menu figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/*Deuxième section*/
+.section-plat{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 50px;
+}
+.section-plat figure{
+    width: 500px;
+    height: 400px;
+}
+.section-plat figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    box-shadow: 5px -5px 0 0 var(--orange-color);
+}
+.description-plat{
+    width: 30%;
+}
+.description-plat h2{
+    font-family: 'Pecita', sans-serif;
+    font-size: 5rem;
+}

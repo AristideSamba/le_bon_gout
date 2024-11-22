@@ -137,6 +137,7 @@ figure img{
     font-family: 'Pecita', sans-serif;
     font-size: 5rem;
     color: var(--white-color);
+    text-align: center;
 }
 .content h2{
     font-family: "Kavoon", serif;
@@ -312,7 +313,7 @@ footer p{
 
 }
 
-/*Ecran de moins de 500px*/
+/*Ecran de moins de 768px*/
 @media screen and (max-width: 768px){
     .burger-menu{
         display: block;
