@@ -1,32 +1,31 @@
 @import url(./style.css);
 
 /*Aside*/
-.première-section{
+.premiere-section{
     display: flex;
-    gap: 40px;
 }
-.première-section aside{
-    width: 25%;
+.premiere-section aside{
+    width: 30%;
     background-color: var(--orange-color);
 
 }
 
-.première-section aside h2{
+.premiere-section aside h2{
     font-family: 'Pecita', sans-serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 400;
     background-color: #a01900;
     color: var(--white-color);
     margin-bottom: 30px;
     text-align: center;
 }
-.première-section aside .aside-nav{
+.premiere-section aside .aside-nav{
     margin-left: 12%;
 }
-.première-section aside .aside-nav ul{
+.premiere-section aside .aside-nav ul{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
 }
 aside .aside-nav ul a{
     color: var(--white-color);
@@ -36,17 +35,22 @@ aside .aside-nav ul a:hover{
     color: var(--yellow-color);
     transition: ease-in-out .3s ;
 }
+
 .description-menu h1{
     font-family: 'Pecita', sans-serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
+}
+.corps-menu{
+    margin-left: 10%;
 }
 .img-menu{
-    display: flex;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    gap: 10%;
 }
 .img-menu figure{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin-top: 25px;
 }
 .img-menu figure p{
@@ -60,14 +64,14 @@ aside .aside-nav ul a:hover{
 
 /*Deuxième section*/
 .section-plat{
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 30px;
     display: flex;
     gap: 50px;
 }
 .section-plat figure{
     width: 500px;
-    height: 400px;
+    height: 300px;
 }
 .section-plat figure img{
     width: 100%;
@@ -81,5 +85,56 @@ aside .aside-nav ul a:hover{
 }
 .description-plat h2{
     font-family: 'Pecita', sans-serif;
-    font-size: 5rem;
+    font-size: 3.5rem;
+}
+/*L'aside pour les mobiles*/
+.nav-aside-mobile{
+    display: none;
+}
+
+/*Ecran de moins de 768px*/
+@media screen and (max-width: 768px){
+    .premiere-section aside{
+        display: none;
+        
+    }
+    .corps-menu{
+        margin-top: 5%;
+        width: 100%;
+    }
+    .img-menu{
+        grid-template-columns: 40% 40%;
+    }
+    .img-menu figure{
+        width: 150px;
+        height: 150px;
+        margin-top: 10px;
+    }
+    .section-plat{
+        flex-direction: column;
+    }
+    .section-plat figure{
+        width: 300px;
+        height: 200px;
+        order: 2;
+    }
+    .description-plat{
+        width: 100%;
+    }
+    
+    /*L'aside pour les mobiles*/
+    .nav-aside-mobile{
+        width: 100%;
+        padding: 10%;
+        display: block;
+        background-color: #F2F2F2;
+    }
+    .nav-aside-mobile .aside-mobile h3{
+        font-family: 'Pecita', sans-serif;
+        font-size: 3rem;
+    }
+    .nav-aside-mobile .aside-mobile ul li{
+        margin-top: 20px;
+        
+    }
 }

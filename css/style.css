@@ -349,7 +349,6 @@ footer p{
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-left: 25%;
         gap: 20px;
         position: absolute;
         top: 30px;
@@ -357,8 +356,9 @@ footer p{
     }
     header nav ul li a{
         font-size: 1.8rem;
-        font-weight: 600;
+        font-weight: 400;
         color: var(--black-color);
+        margin-left: 45px;
     }
     header nav ul .separateur,
     header nav ul .last-separateur{
