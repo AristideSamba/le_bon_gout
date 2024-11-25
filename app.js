@@ -64,3 +64,8 @@ setSlider();
     menu.classList.remove("active");
     navMenu.classList.remove("active");
  }))
+
+ //Fonction pour le button en savoir plus de la page d'accueil qui redirige vers la page a propos.html
+ function redirection() {
+    window.location.href = "./apropos.html";
+  }
