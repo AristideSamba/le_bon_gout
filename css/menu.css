@@ -157,7 +157,7 @@ aside .aside-nav ul a:hover{
     }
     .nav-aside-mobile .aside-mobile ul .separateur{
         width: 100%;
-        height: .5px;
+        height: 1px;
         background-color: var(--orange-color);
     }
 }

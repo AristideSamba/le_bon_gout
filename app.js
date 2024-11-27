@@ -15,7 +15,7 @@ const startAutoPlay = () =>{
     clearInterval(autoPlay);
     autoPlay = setInterval(() =>{
         next.click();
-    }, 10000)
+    }, 7000)
 }
 startAutoPlay();
 

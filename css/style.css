@@ -367,7 +367,6 @@ figure img{
     font: 1.5rem 'Montserrat', sans-serif;
     cursor: pointer;
     transition: ease-in-out .3s ;
-    font-size: 1.7rem;
 }
 .troisieme-section button:hover{
     background-color: var(--yellow-color);
@@ -513,6 +512,14 @@ footer figure img{
     
     footer p{
         font-size: 1.2rem;
+    }
+    /*Troisieme section*/
+    .troisieme-section .horaires{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .troisieme-section .horaires .jours{
+        width: 100%;
     }
 }
 /*plus petits ecrans*/
