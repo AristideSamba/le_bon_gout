@@ -256,7 +256,7 @@ figure img{
 .second-section{
     position: relative;
     width: 90%;
-    margin: 80px auto;
+    margin: 60px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,7 +267,7 @@ figure img{
 }
 .second-section .description h3{
     font-family: 'Pecita', sans-serif;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 .second-section .description p{
     margin-top: 1.5rem;
@@ -296,8 +296,84 @@ figure img{
     border-radius: 20px;
     border: 5px solid transparent;
     box-shadow: 5px -5px 0 0 var(--orange-color);
+    transition: .3s ease-in-out;
 }
 
+.second-section figure img:hover{
+    transform: scale(1.1) rotate(3deg);
+    transition: .3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+/*Troisieme section horaires*/
+.troisieme-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.troisieme-section h3{
+    font-family: 'Pecita', sans-serif;
+    font-size: 3rem;
+}
+.troisieme-section .separateur{
+    width: 60%;
+    height: 1px;
+    background-color: var(--orange-color);
+}
+.troisieme-section figure img{
+    width: 50px;
+}
+.troisieme-section .horaires{
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.troisieme-section .horaires h4{
+    font-size: 1.5rem;
+}
+.troisieme-section .horaires p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    gap: 10px;
+}
+.troisieme-section .horaires p img{
+    width: 15px;
+}
+.troisieme-section .horaires .jours{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    padding: 20px 10px;
+    background-color: #F2F2F2;
+    border: #DCDCDC solid 1px;
+}
+.troisieme-section button{
+    margin-top: 20px;
+    padding: 15px 40px;
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    font: 1.5rem 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: ease-in-out .3s ;
+    font-size: 1.7rem;
+}
+.troisieme-section button:hover{
+    background-color: var(--yellow-color);
+    color: var(--black-color);
+    transition: ease-in-out .3s ;
+}
 /*Footer*/
 footer{
     background-color: #F2F2F2;

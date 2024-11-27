@@ -12,28 +12,43 @@
 
 .premiere-section aside h2{
     font-family: 'Pecita', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 400;
     background-color: #a01900;
     color: var(--white-color);
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-align: center;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.premiere-section aside h2 img{
+    width: 30px;
+    padding-right: 5px;
 }
 .premiere-section aside .aside-nav{
-    margin-left: 12%;
+    
 }
 .premiere-section aside .aside-nav ul{
     display: flex;
     flex-direction: column;
-    gap: 50px;
 }
 aside .aside-nav ul a{
+    display: block;
+    padding: 15px;
     color: var(--white-color);
     transition: ease-in-out .3s ;
+    font-weight: 600;
+}
+aside .aside-nav ul li img{
+    width: 30px;
+    padding-right: 10px;
 }
 aside .aside-nav ul a:hover{
     color: var(--yellow-color);
     transition: ease-in-out .3s ;
+    background-color: #a01900;
 }
 
 .description-menu h1{
