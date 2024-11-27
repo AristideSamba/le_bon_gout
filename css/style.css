@@ -300,12 +300,20 @@ figure img{
 
 /*Footer*/
 footer{
-    background-color: #FAFAFA;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    gap: 10px;
+    border-top: solid 1px  #DCDCDC;
 }
 footer p{
     text-align: center;
     font-style: italic;
-    margin: 10px;
+}
+footer figure img{
+    width: 30px;
 }
 
 /*les mdeias querrys*/
