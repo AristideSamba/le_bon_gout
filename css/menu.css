@@ -121,8 +121,8 @@ aside .aside-nav ul a:hover{
         grid-template-columns: 40% 40%;
     }
     .img-menu figure{
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
         margin-top: 10px;
     }
     .section-plat{
@@ -149,8 +149,16 @@ aside .aside-nav ul a:hover{
         font-size: 3rem;
         color: var(--orange-color);
     }
+    .nav-aside-mobile .aside-mobile h3 img{
+        width: 30px;
+        padding-right: 10px;
+    }
     .nav-aside-mobile .aside-mobile ul li{
         margin-top: 20px; 
+    }
+    .nav-aside-mobile .aside-mobile ul li img{
+        width: 30px;
+        padding-right: 10px;
     }
     .nav-aside-mobile .aside-mobile ul li a{
         color: var(--orange-color);

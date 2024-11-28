@@ -148,14 +148,15 @@ figure img{
 .buttons{
     position: absolute;
     top: 50%;
-    left: 5%;
-    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .buttons button{
     border: none;
-    color: var(--orange-color);
+    color: var(--yellow-color);
     background-color: transparent;
     font-size: 3rem;
     font-weight: 900;
@@ -254,7 +255,6 @@ figure img{
 
 /*Section 2*/
 .second-section{
-    position: relative;
     width: 90%;
     margin: 60px auto;
     display: flex;
@@ -270,7 +270,9 @@ figure img{
     font-size: 3rem;
 }
 .second-section .description p{
-    margin-top: 1.5rem;
+    margin-top: 20px;
+    line-height: 3rem;
+    font-size: 1.5rem;
 }
 .second-section .description button{
     margin-top: 20px;
@@ -455,7 +457,6 @@ footer figure img{
     }
     header nav .btn-command{
         display: block;
-        margin-top: 40%;
         width: 80%;
         font-size: 2rem;
         padding: 25px;
@@ -467,9 +468,7 @@ footer figure img{
         border-radius: 0;
     }
     .buttons{
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 35%;
     }
     .buttons button{
         color: var(--yellow-color);
