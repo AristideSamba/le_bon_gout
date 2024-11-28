@@ -67,8 +67,12 @@ setSlider();
  }))
 
  //Fonction pour le button en savoir plus de la page d'accueil qui redirige vers la page a propos.html
- function redirection() {
+ function redirectionEnSsavoirPlus() {
     window.location.href = "./apropos.html";
+  }
+  //Fonction pour le button Reserver une table de la page d'accueil qui redirige vers la page reservation.html
+  function redirectionReserver(){
+    window.location.href = "./reservation.html";
   }
 
 //Fonction pour empêcher le scroll quand le burger menu est ouvert

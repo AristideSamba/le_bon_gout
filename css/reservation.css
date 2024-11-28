@@ -152,8 +152,9 @@
     display: none;
 }
 #popup p{
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 600;
+    color: var(--white-color);
 }
 
 .section-info #popup {
@@ -161,9 +162,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #F2F2F2;
+    background-color: #1E1F20;
     border: #DCDCDC solid 1px;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 20px;
 }
 .section-info .close {
@@ -171,7 +172,7 @@
     top: 0;
     right: 0;
     cursor: pointer;
-    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 15px;
     font-size: 2rem;
     background-color: var(--orange-color);
     color: var(--white-color);
@@ -191,5 +192,8 @@
     .input-box input[type="datetime-local"]::-webkit-calendar-picker-indicator {
         width: 50px;
         right: 8px;
+    }
+    #popup p{
+        font-size: 1.8rem;
     }
 }
