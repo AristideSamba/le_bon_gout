@@ -21,6 +21,14 @@
     justify-content: center;
     align-items: center;
 }
+.img-menu figure img{
+    transition: .3s ease-in-out;
+}
+.img-menu figure img:hover{
+    transform: scale(1.2) ;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
 
 .section-menu-burger{
     margin-top: 5%;
