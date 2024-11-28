@@ -6,6 +6,10 @@
     --white-color: #FFFFFF;
     --black-color: #272627;;
 }
+/*Style du body pour éviter le scroll quand le burger menu est ouvert*/
+body.no-scroll {
+    overflow: hidden;
+  }
 /*Header*/
 header{
     position: relative;
@@ -440,7 +444,7 @@ footer figure img{
         align-items: flex-start;
     }
     header nav ul li a{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         font-weight: 400;
         color: var(--black-color);
         margin-left: 45px;
@@ -456,10 +460,12 @@ footer figure img{
         left: 0;
     }
     header nav .btn-command{
+        position: absolute;
+        bottom: 20%;
         display: block;
         width: 80%;
-        font-size: 2rem;
-        padding: 25px;
+        font-size: 1.8rem;
+        padding: 25px 10px;
     }
     /*Première section*/
     .carousel{

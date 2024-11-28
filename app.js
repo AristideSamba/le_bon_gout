@@ -1,5 +1,6 @@
 const menu = document.querySelector('.burger-menu');
 const navMenu = document.querySelector(' nav');
+const body = document.body;
 let carousel = document.querySelector('.carousel');
 let items = carousel.querySelectorAll('.list .item');
 let dots = document.querySelectorAll('.carousel .dots li');
@@ -69,3 +70,8 @@ setSlider();
  function redirection() {
     window.location.href = "./apropos.html";
   }
+
+//Fonction pour empêcher le scroll quand le burger menu est ouvert
+menu.addEventListener('click', () => {
+  body.classList.toggle('no-scroll');
+});
