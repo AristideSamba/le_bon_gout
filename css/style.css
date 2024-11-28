@@ -424,7 +424,7 @@ footer figure img{
         height: 100vh;
         background-color: var(--white-color);
         left: -100%;
-        top: 70px;
+        top: 60px;
         display: flex;
         flex-direction: column;
         justify-content: center;

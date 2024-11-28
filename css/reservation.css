@@ -1,7 +1,28 @@
 @import url(./style.css);
 
-main{
+.section-reservation .intro{
+    width: 40%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-reservation .intro h1{
+    color: var(--white-color);
+    font-size: 4rem;
+    font-weight: 700;
+}
+.section-reservation .intro p{
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+.section-reservation{
+    height: 80vh;
+    display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     background-image: url(../asset/reservation-image.jpg);
@@ -95,4 +116,80 @@ main{
     font-size: 1.7rem;
     font-weight: 600;
     margin-top: 10px;
+}
+/*Deuxiemesection*/ 
+.section-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 30px auto;
+}
+.section-info h3{
+    font-family: 'Pecita', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.section-info p{
+    line-height: 3.5rem;
+    text-align: justify;
+}
+.section-info button{
+    background-color: var(--orange-color);
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+.section-info button img{
+    width: 30px;
+}
+/*message popup pour le numéro de gtéléphone*/
+.hidden {
+    display: none;
+}
+#popup p{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.section-info #popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F2F2F2;
+    border: #DCDCDC solid 1px;
+    border-radius: 5px;
+    padding: 20px;
+}
+.section-info .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+    font-size: 2rem;
+    background-color: var(--orange-color);
+    color: var(--white-color);
+}
+
+/*Ecran de moins de 768px*/
+@media screen and (max-width: 768px){
+    .section-reservation{
+        flex-direction: column;
+    }
+    .section-info{
+        width: 90%;
+    }
+    .section-reservation .intro{
+        width: 90%;
+    }
+    .input-box input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+        width: 50px;
+        right: 8px;
+    }
 }

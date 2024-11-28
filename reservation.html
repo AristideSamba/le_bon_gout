@@ -43,33 +43,49 @@
     </header>
     <!--Mon main -->
     <main>
-          <section class="reservation">
-            <div class="form-reservation">
-                <h2>Faites votre réservation</h2>
-                <form action="#" method="post">
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                        <input type="name" required>
-                        <label for="name">Votre nom</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="restaurant-outline"></ion-icon></span>
-                        <input type="number" min="1" max="10" required>
-                        <label for="number">Couverts</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="calendar-clear-outline"></ion-icon></span>
-                        <input type="datetime-local" id="myDate" name="datetime" required>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                        <input type="email" required>
-                        <label for="email">Mail</label>
-                    </div>
-                    <button type="submit" class="btn-submit">Réserver</button>
-                </form>
+        <section class="section-reservation">
+            <div class="intro">
+                <h1>LE BON GOUT</h1>
+                <p>Réservez une table dans notre restaurant</p>
+            </div>  
+            <div class="reservation">
+                <div class="form-reservation">
+                    <h2>Faites votre réservation</h2>
+                    <form action="#" method="post">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                            <input type="name" required>
+                            <label for="name">Votre nom</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="restaurant-outline"></ion-icon></span>
+                            <input type="number" min="1" max="10" oninput="this.value = Math.min(Math.max(this.value, 1), 10);"required>
+                            <label for="number">Couverts</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="calendar-clear-outline"></ion-icon></span>
+                            <input type="datetime-local" id="myDate" name="datetime" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                            <input type="email" required>
+                            <label for="email">Mail</label>
+                        </div>
+                        <button type="submit" class="btn-submit">Réserver</button>
+                    </form>
+                </div>
+            </div>      
+        </section>
+        <section class="section-info">
+            <h3>Conditions générales</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam rerum vero fugiat earum quasi? Autem soluta inventore culpa explicabo architecto sapiente odio. Vous ne pouvez réserver au dela de 10 personnes par table.
+            <br>Les réservations se font uniquement sur notre site &#x1F609;. <br>Merci et à bientôt.<br>Vous pouvez également réserver par téléphone. Cliquez sur le button ci-dessous pour voir notre numéro de téléphone!</p>
+            <button id="myButton"><img src="./asset/appel-telephonique.png" alt=""></button>
+            <div id="popup" class="hidden">
+                <p>+33 05 21 25 32</p>
+                <span class="close"><ion-icon name="close-outline"></ion-icon></span> 
             </div>
-          </section>      
+        </section>
     </main>
     <footer>
         <figure>
@@ -80,5 +96,6 @@
     <script src="./pages.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./reservation.js"></script>
 </body>
 </html>
