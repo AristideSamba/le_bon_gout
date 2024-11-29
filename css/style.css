@@ -59,6 +59,7 @@ header nav ul li a::after{
     transform: scale(0);
     transition: transform .3s ease-in-out;
 }
+
 header nav ul li a:hover::after{
     transform: scale(1);
 }
@@ -76,6 +77,9 @@ header nav .btn-command{
     font-weight: 500;
     cursor: pointer;
     display: none;
+}
+header nav ul a.active{
+    color: var(--orange-color);
 }
 /*Burger Menu*/
 .burger-menu{

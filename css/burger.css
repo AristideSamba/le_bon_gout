@@ -19,12 +19,8 @@ aside .aside-nav ul a.active{
     gap: 0%;
 }
 .img-menu figure{
-    width: 150px;
+    width: 170px;
     height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .img-menu figure img{
     transition: .3s ease-in-out;
