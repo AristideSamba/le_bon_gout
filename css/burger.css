@@ -1,5 +1,10 @@
 @import url(./menu.css);
 
+/*Fonction active lorqu'on clique sur un menu*/
+aside .aside-nav ul a.active{
+    background-color: #a01900;
+    color: var(--yellow-color);
+}
 .premiere-section aside{
     width: 20%;
 }

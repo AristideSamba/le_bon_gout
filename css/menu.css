@@ -50,9 +50,7 @@ aside .aside-nav ul a:hover{
     transition: ease-in-out .3s ;
     background-color: #a01900;
 }
-aside .aside-nav ul a:active{
-    background-color: #a01900;
-}
+
 .description-menu h1{
     font-family: 'Pecita', sans-serif;
     font-size: 3.5rem;
