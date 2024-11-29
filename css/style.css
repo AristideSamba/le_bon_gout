@@ -493,7 +493,8 @@ footer figure img{
         font-size: 3rem;
     }
     .item .commander{
-        top: 63%;
+        height: 120px;
+        top: 68%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
