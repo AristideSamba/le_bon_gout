@@ -41,6 +41,9 @@ aside .aside-nav ul a{
     transition: ease-in-out .3s ;
     font-weight: 600;
 }
+aside .aside-nav ul li{
+    margin-bottom: 10px;
+}
 aside .aside-nav ul li img{
     width: 30px;
     padding-right: 10px;
@@ -67,6 +70,15 @@ aside .aside-nav ul a:hover{
     width: 200px;
     height: 200px;
     margin-top: 25px;
+    padding: 25px 20px;
+    background-color: #edededee;
+    border-radius: 10px;
+}
+.img-menu figure h3{
+    font-family: "Kavoon", serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: var(--orange-color);
 }
 .img-menu figure p{
     text-align: center;
@@ -126,9 +138,13 @@ aside .aside-nav ul a:hover{
         grid-template-columns: 40% 40%;
     }
     .img-menu figure{
-        width: 130px;
+        width: 125px;
         height: 130px;
         margin-top: 10px;
+    }
+    .img-menu figure img{
+        width: 90%;
+        height: 90%;
     }
     .section-plat{
         flex-direction: column;

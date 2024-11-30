@@ -79,3 +79,8 @@ setSlider();
 menu.addEventListener('click', () => {
   body.classList.toggle('no-scroll');
 });
+
+//Fonction pour le button Notre Carte qui redirige vers la page menu.html
+function redirectionNotreCarte() {
+  window.location.href = "./menu.html";
+}

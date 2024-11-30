@@ -19,14 +19,24 @@ aside .aside-nav ul a.active{
     gap: 0%;
 }
 .img-menu figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 170px;
-    height: 150px;
+    height: 170px;
+}
+.img-menu figure figcaption p{
+    font-family: "Kavoon", serif;
+    font-weight: 200;
 }
 .img-menu figure img{
+    width: 80%;
+    height: 80%;
     transition: .3s ease-in-out;
 }
 .img-menu figure img:hover{
-    transform: scale(1.2) ;
+    transform: scale(1.1) ;
     transition: .3s ease-in-out;
     cursor: pointer;
 }
@@ -52,6 +62,13 @@ aside .aside-nav ul a.active{
         grid-template-columns: 40% 40%;
         gap: 30px;
         justify-content: flex-start;
+    }
+    .img-menu figure{
+        width: 100px;
+        height: 100px;
+    }
+    .img-menu figure figcaption p{
+        font-size: 1.2rem;
     }
     .image-presentation img{
         width: 310px;
