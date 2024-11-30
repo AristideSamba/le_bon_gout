@@ -67,8 +67,12 @@ aside .aside-nav ul a.active{
         width: 100px;
         height: 100px;
     }
+    .img-menu figure img{
+        width: 90px;
+        height: 80px;
+    }
     .img-menu figure figcaption p{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .image-presentation img{
         width: 310px;
