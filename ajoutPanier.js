@@ -1,10 +1,9 @@
-const button = document.getElementById('myButton');
-const popup = document.getElementById('popup');
+const button = document.getElementById('ajoutPanier');
+const popup = document.getElementById('popupAjoutPanier');
 const closeButton = document.querySelector('.close'); // On cible l'élément avec la classe 'close'
 
 button.addEventListener('click', () => {
     popup.classList.remove('hidden');
-    overlay.classList.remove('hidden');
 });
 
 closeButton.addEventListener('click', () => {

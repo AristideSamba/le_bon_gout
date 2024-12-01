@@ -68,12 +68,19 @@
                         </figure>
                     </div>
                     <div class="img-menu">
-                        <figure>
+                        <figure id="ajoutPanier">
                             <figcaption>
                                 <p>Burger Tasty <br>6.50€</p>
                             </figcaption>
                             <img src="./asset/burger-menu1.png" alt="Image burger Tasty">
                         </figure>
+                        <div id="popupAjoutPanier" class="hidden">
+                            <h4><img src="./asset/Frame 1.png" alt="Logo du site">Le Bon Gout</h4>
+                            <p>Burger Tasty <br>6.50€</p>
+                            <img src="./asset/burger-menu1.png" alt="Image burger Tasty">
+                            <span class="close"><ion-icon name="close-outline"></ion-icon></span>
+                            <button>Ajouter au panier</button> 
+                        </div>
                         <figure>
                             <figcaption>
                                 <p>Donnut burger<br>5€</p>
@@ -163,5 +170,8 @@
         <p>&copy; LE BON GOUT&nbsp;&nbsp;&nbsp; - Tous droits réservés - 2024</p>
     </footer>
     <script src="./pages.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./ajoutPanier.js"></script>
 </body>
 </html>
