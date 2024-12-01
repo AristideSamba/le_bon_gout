@@ -316,74 +316,47 @@ figure img{
     box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
 }
 
-/*Troisieme section horaires*/
-.troisieme-section{
+/*Section qui parle ramene vers les bon plans*/
+.section-bonPlan{
+    height: 300px;
+    background-color: #DCDCDC;
     display: flex;
-    flex-direction: column;
+    gap: 50px;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 30px;
 }
-.troisieme-section h3{
-    font-family: 'Pecita', sans-serif;
-    font-size: 3rem;
-}
-.troisieme-section .separateur{
-    width: 60%;
-    height: 1px;
-    background-color: var(--orange-color);
-}
-.troisieme-section figure img{
-    width: 50px;
-}
-.troisieme-section .horaires{
-    width: 60%;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-}
-.troisieme-section .horaires h4{
-    font-size: 1.5rem;
-}
-.troisieme-section .horaires p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 300;
-    gap: 10px;
-}
-.troisieme-section .horaires p img{
-    width: 15px;
-}
-.troisieme-section .horaires .jours{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    padding: 20px 10px;
-    background-color: #F2F2F2;
-    border: #DCDCDC solid 1px;
-}
-.troisieme-section button{
-    margin-top: 20px;
-    padding: 15px 40px;
-    background-color: var(--orange-color);
-    color: var(--white-color);
-    border: none;
+.section-bonPlan .message{
+    background-color: #00508A;
+    padding: 40px;
     border-radius: 5px;
-    font: 1.5rem 'Montserrat', sans-serif;
-    cursor: pointer;
-    transition: ease-in-out .3s ;
+    border: solid 1px #1967D2;
 }
-.troisieme-section button:hover{
-    background-color: var(--yellow-color);
-    color: var(--black-color);
-    transition: ease-in-out .3s ;
+.section-bonPlan .message p{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--white-color);
+    line-height: 3rem;
 }
+.section-bonPlan figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: var(--white-color);
+}
+.section-bonPlan figure img{
+    width: 300px;
+    height: 200%;
+}
+.section-bonPlan figure p{
+    font-family: "Kavoon", serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #504F54;
+}
+
 /*Footer*/
 footer{
     background-color: #F2F2F2;
@@ -521,18 +494,27 @@ footer figure img{
     .second-section figure{
         width: 300px;
     }
+    /*Section qui parle ramene vers les bon plans*/
+    .section-bonPlan{
+        height: 520px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .section-bonPlan figure img{
+        width: 300px;
+        height: 200px;
+    }
+    .section-bonPlan .message p{
+        font-size: 1.7rem;
+    }
+    .section-bonPlan .message{
+        width: 80%;
+    }
     
     footer p{
         font-size: 1.2rem;
     }
-    /*Troisieme section*/
-    .troisieme-section .horaires{
-        flex-direction: column;
-        gap: 10px;
-    }
-    .troisieme-section .horaires .jours{
-        width: 100%;
-    }
+    
 }
 /*plus petits ecrans*/
 @media screen and (max-width: 400px){

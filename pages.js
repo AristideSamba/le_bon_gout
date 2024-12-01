@@ -16,3 +16,8 @@ menu.addEventListener("click", () => {
 menu.addEventListener('click', () => {
    body.classList.toggle('no-scroll');
  });
+
+  //Fonction pour le button Reserver une table de la page d'accueil qui redirige vers la page reservation.html
+  function redirectionReserver(){
+   window.location.href = "./reservation.html";
+ }
