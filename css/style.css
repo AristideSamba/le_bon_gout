@@ -331,6 +331,11 @@ figure img{
     border-radius: 5px;
     border: solid 1px #1967D2;
 }
+.section-bonPlan .message h4{
+    text-align: center;
+    color: var(--white-color);
+    font-size: 2rem;
+}
 .section-bonPlan .message p{
     font-size: 2rem;
     text-align: center;
@@ -360,14 +365,19 @@ figure img{
 /*Footer*/
 footer{
     background-color: #F2F2F2;
+    height: 60px;
+    border-top: solid 1px  #DCDCDC;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
-    gap: 10px;
-    border-top: solid 1px  #DCDCDC;
 }
-footer p{
+footer figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+footer figure p{
     text-align: center;
     font-style: italic;
 }
