@@ -68,54 +68,61 @@
                         </figure>
                     </div>
                     <div class="img-menu">
-                        <figure>
+                        <figure data-burger-name="Menu patrouilleur" data-burger-price="6.50" data-burger-image="./asset/menuenfant1.jpg">
                             <figcaption>
                                 <p>Menu patrouilleur<br>6.50€</p>
                             </figcaption>
                             <img src="./asset/menuenfant1.jpg" alt="Image burger Tasty">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Menu Loud" data-burger-price="6" data-burger-image="./asset/menuenfant2.jpg">
                             <figcaption>
                                 <p>Menu Loud<br>6€</p>
                             </figcaption>
                             <img src="./asset/menuenfant2.jpg" alt="Donnut burger">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Kinder surprise" data-burger-price="9" data-burger-image="./asset/menuenfant3.jpg">
                             <figcaption>
                                 <p>Kinder surprise<br>9€</p>
                             </figcaption>
                             <img src="./asset/menuenfant3.jpg" alt="Image burger végétal">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Menu Juicy" data-burger-price="8.30" data-burger-image="./asset/menuenfant4.jpg">
                             <figcaption>
                                 <p>Menu Juicy<br>8.50€</p>
                             </figcaption>
                             <img src="./asset/menuenfant4.jpg" alt="Image classique">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Menu complet" data-burger-price="7.90" data-burger-image="./asset/menuenfant5.jpg">
                             <figcaption>
                                 <p>Menu complet<br>7.90€</p>
                             </figcaption>
                             <img src="./asset/menuenfant5.jpg" alt="Image Cheddar-Bacon-Caramélisé">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Menu classique" data-burger-price="9" data-burger-image="./asset/menuenfant6.jpg">
                             <figcaption>
                                 <p>Menu classique<br>9€</p>
                             </figcaption>
                             <img src="./asset/menuenfant6.jpg" alt="Image Le régional">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Menu Gourmand" data-burger-price="7.50" data-burger-image="./asset/menuenfant7.jpg">
                             <figcaption>
                                 <p>Menu gourmand<br>7.50€</p>
                             </figcaption>
                             <img src="./asset/menuenfant7.jpg" alt="Image Le créatif">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Menu Bob" data-burger-price="5" data-burger-image="./asset/menuenfant8.jpg">
                             <figcaption>
                                 <p>Menu Bob<br>5€</p>
                             </figcaption>
                             <img src="./asset/menuenfant8.jpg" alt="Image Le Petit Prince">
                         </figure>
+                    </div>
+                    <div id="popupAjoutPanier" class="hidden">
+                        <h4>Le Bon Gout</h4>
+                        <p id="popup-content"></p>
+                        <img id="popup-image" src="">
+                        <span class="close"><ion-icon name="close-outline" alt="Image du produit"></ion-icon></span>
+                        <button>Ajouter au panier</button> 
                     </div>
                     <div class="section-menu-burger">
                         <h2>Le Bont Gout</h2>
@@ -159,5 +166,8 @@
         </figure>
     </footer>
     <script src="./pages.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./ajoutPanier.js"></script>
 </body>
 </html>

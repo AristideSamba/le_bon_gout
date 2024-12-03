@@ -68,54 +68,61 @@
                         </figure>
                     </div>
                     <div class="img-menu">
-                        <figure>
+                        <figure data-burger-name="Coca zéro 33 cl" data-burger-price="3" data-burger-image="./asset/CocaZero.png">
                             <figcaption>
                                 <p>Coca zéro 33 cl<br>3€</p>
                             </figcaption>
                             <img src="./asset/CocaZero.png" alt="Image burger Tasty">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Coca-Cola 33 cl" data-burger-price="3" data-burger-image="./asset/CocaCola.jpg">
                             <figcaption>
-                                <p>Coca Cola 33 cl<br>3€</p>
+                                <p>Coca-Cola 33 cl<br>3€</p>
                             </figcaption>
                             <img src="./asset/cocaCola.jpg" alt="Donnut burger">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Fuse tea 33 cl" data-burger-price="3.30" data-burger-image="./asset/fusetea">
                             <figcaption>
                                 <p>Fuse tea 33cl<br>3.30€</p>
                             </figcaption>
                             <img src="./asset/fusetea" alt="Image burger végétal">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Orangina cl" data-burger-price="3" data-burger-image="./asset/orangina-33cl.webp">
                             <figcaption>
                                 <p>Orangina 33cl<br>3€</p>
                             </figcaption>
                             <img src="./asset/orangina-33cl.webp" alt="Image classique">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Fanta 33 cl" data-burger-price="3" data-burger-image="./asset/fanta-berry.webp">
                             <figcaption>
-                                <p>fanta 33 cl<br>3€</p>
+                                <p>Fanta 33 cl<br>3€</p>
                             </figcaption>
                             <img src="./asset/fanta-berry.webp" alt="Image Cheddar-Bacon-Caramélisé">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Cristaline 1L" data-burger-price="3" data-burger-image="./asset/cristaline-pet-15l-eau-source.jpg">
                             <figcaption>
                                 <p>Cristaline 1l<br>3€</p>
                             </figcaption>
                             <img src="./asset/cristaline-pet-15l-eau-source.jpg" alt="Image Le régional">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Sprite 33 cl" data-burger-price="3" data-burger-image="./asset/sprite.jpg">
                             <figcaption>
-                                <p>Sprit 33 cl<br>3€</p>
+                                <p>Sprite 33 cl<br>3€</p>
                             </figcaption>
                             <img src="./asset/sprite.jpg" alt="Image Le créatif">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Oasis 33 cl" data-burger-price="3.50" data-burger-image="./asset/oasis-tropical-canette-33cl.webp">
                             <figcaption>
                                 <p>Oasis 33 cl<br>3.50€</p>
                             </figcaption>
                             <img src="./asset/oasis-tropical-canette-33cl.webp" alt="Image Le Petit Prince">
                         </figure>
+                    </div>
+                    <div id="popupAjoutPanier" class="hidden">
+                        <h4>Le Bon Gout</h4>
+                        <p id="popup-content"></p>
+                        <img id="popup-image" src="">
+                        <span class="close"><ion-icon name="close-outline" alt="Image du produit"></ion-icon></span>
+                        <button>Ajouter au panier</button> 
                     </div>
                     <div class="section-menu-burger">
                         <h2>Le Bont Gout</h2>
@@ -159,5 +166,8 @@
         </figure>
     </footer>
     <script src="./pages.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./ajoutPanier.js"></script>
 </body>
 </html>

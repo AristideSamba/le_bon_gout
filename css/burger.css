@@ -16,7 +16,7 @@ aside .aside-nav ul a.active{
 .img-menu{
     justify-content: center;
     grid-template-columns: 30% 30% 30%;
-    gap: 0%;
+    gap: 0;
 }
 .img-menu figure{
     display: flex;
@@ -150,7 +150,6 @@ aside .aside-nav ul a.active{
     }
     #popupAjoutPanier img{
         width: 180px;
-        height: 180px;
     }
     .close{
         right: 10%;
