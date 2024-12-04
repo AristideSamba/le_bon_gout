@@ -55,16 +55,15 @@ aside .aside-nav ul a:hover{
 }
 
 .description-menu h1{
-    font-family: 'Pecita', sans-serif;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
+    color: #504F54;
 }
 .corps-menu{
     margin-left: 10%;
 }
 .img-menu{
     display: grid;
-    grid-template-columns: 20% 20% 20%;
-    gap: 10%;
+    grid-template-columns: repeat(3, 1fr);
 }
 .img-menu figure{
     width: 200px;
@@ -96,7 +95,7 @@ aside .aside-nav ul a:hover{
 
 /*Deuxième section*/
 .section-plat{
-    margin-top: 150px;
+    margin-top: 50px;
     margin-bottom: 30px;
     display: flex;
     gap: 50px;
@@ -135,7 +134,7 @@ aside .aside-nav ul a:hover{
         width: 100%;
     }
     .img-menu{
-        grid-template-columns: 40% 40%;
+        grid-template-columns: repeat(2, 1fr);
     }
     .img-menu figure{
         width: 125px;

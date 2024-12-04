@@ -1,4 +1,95 @@
 @import url(./menu.css);
+/*Icon cart header et panneau carte*/
+header .icon-cart{
+    position: relative;
+    margin-right: 20px;
+}
+header svg{
+    width: 30px;
+    height: 30px;
+}
+header .icon-cart span{
+    display: flex;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--white-color);
+    position: absolute;
+    top: 50%;
+    right: -2px;
+    font-size: 1rem;
+}
+
+.cartTab{
+    width: 400px;
+    background-color: #504F54;
+    color: var(--white-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+body.showCart .cartTab{
+    inset: 0 0 0 auto;
+}
+
+.cartTab h3{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab .btn button{
+    background-color: var(--yellow-color);
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .btn .close-btn{
+    background-color: #DCDCDC;
+}
+.cartTab .listCart .item img{
+    width: 100%;
+}
+.cartTab .listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: var(--white-color);
+    color: #504F54;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+}
+.listCart .quantity span:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
 
 /*Fonction active lorqu'on clique sur un menu*/
 aside .aside-nav ul a.active{
@@ -118,6 +209,12 @@ aside .aside-nav ul a.active{
 
 /*Ecran de moins de 768px*/
 @media screen and (max-width: 768px){
+    /*Icon cart header*/
+    header .icon-cart{
+        margin-right: 70px;
+    }
+
+    /*Image des produit*/
     .img-menu{
         margin: 20px auto;
         grid-template-columns: 45% 45%;
@@ -149,7 +246,7 @@ aside .aside-nav ul a.active{
         gap: 20px;
     }
     #popupAjoutPanier img{
-        width: 180px;
+        width: 250px;
     }
     .close{
         right: 10%;

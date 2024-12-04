@@ -22,3 +22,4 @@ images.forEach(figure => {
 closeButton.addEventListener('click', () => {
   popup.classList.add('hidden');
 });
+
