@@ -30,7 +30,6 @@ header .icon-cart span{
     position: fixed;
     top: 0;
     right: 0;
-    bottom: 0;
     inset: 0 -400px 0 auto;
     display: grid;
     grid-template-rows: 70px 1fr 70px;
@@ -58,17 +57,18 @@ body.showCart .cartTab{
 .cartTab .btn .close-btn{
     background-color: #DCDCDC;
 }
-.cartTab .listCart .item img{
+.cartTab .listCart .items img{
     width: 100%;
 }
-.cartTab .listCart .item{
+.cartTab .listCart .items{
     display: grid;
     grid-template-columns: 70px 150px 50px 1fr;
-    gap: 10px;
+    gap: 5px;
     text-align: center;
     align-items: center;
+    justify-content: center;
 }
-.listCart .quantity span{
+.cartTab .listCart .quantity span{
     display: inline-block;
     width: 25px;
     height: 25px;
@@ -77,17 +77,17 @@ body.showCart .cartTab{
     border-radius: 50%;
     cursor: pointer;
 }
-.listCart .quantity span:nth-child(2){
+.cartTab .listCart .quantity span:nth-child(2){
     background-color: transparent;
     color: #eee;
 }
-.listCart .quantity span:nth-child(even){
+.cartTab .listCart .quantity span:nth-child(even){
     background-color: #eee1;
 }
-.listCart{
+.cartTab .listCart{
     overflow: auto;
 }
-.listCart::-webkit-scrollbar{
+.cartTab .listCart::-webkit-scrollbar{
     width: 0;
 }
 
@@ -213,7 +213,13 @@ aside .aside-nav ul a.active{
     header .icon-cart{
         margin-right: 70px;
     }
-
+    .cartTab{
+        width: 100%;
+        right: -500px;
+    }
+    .cartTab .listCart .items{
+        grid-template-columns: 70px 100px 50px 1fr;
+    }
     /*Image des produit*/
     .img-menu{
         margin: 20px auto;

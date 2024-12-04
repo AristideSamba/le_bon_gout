@@ -132,6 +132,7 @@ aside .aside-nav ul a:hover{
     .corps-menu{
         margin-top: 5%;
         width: 100%;
+        margin-left: 25px;
     }
     .img-menu{
         grid-template-columns: repeat(2, 1fr);
