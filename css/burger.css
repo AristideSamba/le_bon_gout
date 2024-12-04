@@ -90,7 +90,40 @@ body.showCart .cartTab{
 .cartTab .listCart::-webkit-scrollbar{
     width: 0;
 }
-
+/*Les produits*/
+.listProduct .items img{
+    width: 130px;
+    height: 130px;
+    filter: drop-shadow(0 50px 20px #0002);
+}
+.listProduct{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.listProduct .items{
+    text-align: center;
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+}
+.listProduct .items h3{
+    font-weight: 500;
+    font-size: large;
+}
+.listProduct .items .price{
+    letter-spacing: 7px;
+    font-weight: 500;
+}
+.listProduct .items button{
+    padding: 10px 20px;
+    background-color: #F2F2F2;
+    border: #DCDCDC solid 1px;
+    border-radius: 5px;
+    font: 1.5rem 'Montserrat', sans-serif;
+    cursor: pointer;
+}
 /*Fonction active lorqu'on clique sur un menu*/
 aside .aside-nav ul a.active{
     background-color: #a01900;
@@ -244,6 +277,14 @@ aside .aside-nav ul a.active{
     }
     .section-menu-burger{
         display: none;
+    }
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .listProduct .items img{
+        width: 70px;
+        height: 70px;
+        filter: drop-shadow(0 50px 20px #0002);
     }
     /*Popup pour l'Ajout au panier*/
     #popupAjoutPanier{
