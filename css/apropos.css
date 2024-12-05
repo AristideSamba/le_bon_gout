@@ -1,5 +1,24 @@
 @import url(style.css);
-
+/*Section presentation*/
+.presentation{
+    text-align: center;
+    background-image: linear-gradient(to right,#DCDCDC, #78777E,  #78777E, #DCDCDC);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.presentation h1{
+    color: var(--white-color);
+    font-size: 3.5rem;
+    letter-spacing: 1.5rem;
+}
+.presentation p{
+    color: var(--white-color);
+    font-weight: 600;
+}
 /*Premiere section*/
 .premiere{
     width: 100%;
@@ -12,10 +31,7 @@
 .premiere .description-apropos{
     width: 40%;
 }
-.premiere .description-apropos h1{
-    font-family: 'Pecita', sans-serif;
-    font-size: 3rem;
-}
+
 .premiere .description-apropos p{
     margin-top: 10px;
     line-height: 3rem;
@@ -49,8 +65,9 @@
     width: 40%;
 }
 .deuxieme .description-apropos h2{
-    font-family: 'Pecita', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 3rem;
+    color: #504F54;
 }
 .deuxieme .description-apropos p{
     margin-top: 10px;

@@ -55,7 +55,8 @@ aside .aside-nav ul a:hover{
 }
 
 .description-menu h1{
-    font-size: 3.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
     color: #504F54;
 }
 .corps-menu{
