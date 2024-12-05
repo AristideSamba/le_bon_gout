@@ -9,6 +9,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/android-chrome-512x512.png">
     <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="stylesheet" href="./css/menu.css">
+    <script src="https://kit.fontawesome.com/6009bb56e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/star?f=classic&s=solid">
     <title>Le bon gout</title>
 </head>
 <body>
@@ -112,6 +114,34 @@
                             <p> <strong>Poulet pané citronné:</strong>  Croustillant à l'extérieur, juteux à l'intérieur. Une touche d'acidité pour un plaisir garanti.</p>
                         </div>
                     </div> 
+                    <div class="container">
+                        <h3>LAISSEZ UN AVIS !</h3>
+                        <div class="post">
+                            <div class="text">Merci d'avoir partagé votre expérience!</div>
+                            <div class="edit">EDIT</div>
+                        </div>
+                        <div class="star-widget">
+                            <input type="radio" name="rate" id="rate-5">
+                            <label for="rate-5" class="fa-solid fa-star"></label>
+                            <input type="radio" name="rate" id="rate-4">
+                            <label for="rate-4" class="fa-solid fa-star"></label>
+                            <input type="radio" name="rate" id="rate-3">
+                            <label for="rate-3" class="fa-solid fa-star"></label>
+                            <input type="radio" name="rate" id="rate-2">
+                            <label for="rate-2" class="fa-solid fa-star"></label>
+                            <input type="radio" name="rate" id="rate-1">
+                            <label for="rate-1" class="fa-solid fa-star"></label>
+                            <form action="#">
+                                <header></header>
+                                <div class="textarea">
+                                    <textarea cols="30" placeholder="Partagez votre expérience."></textarea>
+                                </div>
+                                <div class="btn">
+                                    <button type="submit">Envoyer</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>                
             </section>
             <!-- Section aside pour les mobile qui vient apès la section plat du jour -->
@@ -150,5 +180,6 @@
         </figure>
     </footer>
     <script src="./pages.js"></script>
+    <script src="avis.js"></script>
 </body>
 </html>
