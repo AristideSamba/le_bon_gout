@@ -9,8 +9,8 @@ const lightBoxNext = document.createElement('div');
 
 lightBoxContainer.classList.add('lightbox');
 lightBoxContent.classList.add('lightbox-content');
-lightBoxPrev.classList.add('fas', 'angle-left', 'lightbox-prev');
-lightBoxNext.classList.add('fas', 'angle-right', 'lightbox-next');
+lightBoxPrev.classList.add('fa', 'angle-left', 'lightbox-prev');
+lightBoxNext.classList.add('fa', 'angle-right', 'lightbox-next');
 
 lightBoxContainer.appendChild(lightBoxContent);
 lightBoxContent.appendChild(lightBoxImg);

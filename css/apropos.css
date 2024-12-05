@@ -31,7 +31,12 @@
 .premiere .description-apropos{
     width: 40%;
 }
-
+.premiere .description-apropos h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    color: #504F54;
+    letter-spacing: 1.2rem;
+}
 .premiere .description-apropos p{
     margin-top: 10px;
     line-height: 3rem;
@@ -68,6 +73,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 3rem;
     color: #504F54;
+    letter-spacing: 1.2rem;
 }
 .deuxieme .description-apropos p{
     margin-top: 10px;
@@ -143,7 +149,7 @@
         gap: 30px;
     }
     .premiere .description-apropos h1{
-        font-size: 4rem;
+        font-size: 3.4rem;
     }
     .premiere .description-apropos p{
         text-align: justify;
@@ -163,7 +169,7 @@
         width: 90%;
     }
     .deuxieme .description-apropos h2{
-        font-size: 4rem;
+        font-size: 3.4rem;
     }
     .deuxieme .description-apropos p{
         text-align: justify;

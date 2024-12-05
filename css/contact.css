@@ -33,8 +33,10 @@
     gap: 40px;
 }
 .section-contact h1{
-    font-family: 'Pecita', sans-serif;
-    font-size: 4rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    color: #504F54;
+    letter-spacing: 1.2rem;
 }
 .section-contact p{
     margin-bottom: 30px;
@@ -159,6 +161,9 @@
 @media screen and (max-width: 768px){
     main{
         flex-direction: column;
+    }
+    .section-contact h1{
+        font-size: 3.4rem;
     }
     .section-contact{
         width: 90%;
