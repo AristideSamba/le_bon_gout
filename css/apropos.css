@@ -39,6 +39,7 @@
 .premiere .description-apropos p{
     margin-top: 10px;
     line-height: 3rem;
+    text-align: justify;
 }
 .premiere figure{
     width: 40%;
@@ -76,6 +77,7 @@
 .deuxieme .description-apropos p{
     margin-top: 10px;
     line-height: 3rem;
+    text-align: justify;
 }
 .deuxieme figure{
     width: 40%;

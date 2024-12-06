@@ -40,6 +40,7 @@
 .section-contact p{
     margin-bottom: 30px;
     margin-top: 20px;
+    text-align: justify;
 }
 .section-contact figure{
     display: flex;

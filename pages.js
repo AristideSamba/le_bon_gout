@@ -21,3 +21,4 @@ menu.addEventListener('click', () => {
   function redirectionReserver(){
    window.location.href = "./reservation.html";
  }
+ 

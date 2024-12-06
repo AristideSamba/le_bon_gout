@@ -55,7 +55,7 @@
                             <li><a href="./sandwich.html"><img src="./asset/icon-sandwich.png" alt="Icone Sandwich"> Nos sandwichs</a></li>
                             <li><a href="./salade.html" class="active"><img src="./asset/icone-salade.png" alt="Icone salade"> Nos salades</a></li>
                             <li><a href="./boisson.html"><img src="./asset/icone-boisson.png" alt="Icone boissons">Nos boissons</a></li>
-                            <li><a href="#"><img src="./asset/icone-snack-bar.png" alt="Icone snack">Snacks</a></li>
+                            <li><a href="./Chicken Tasty"><img src="./asset/icone-chicken-blanc.png" alt="Icone snack">Chicken Tasty</a></li>
                             <li><a href="./dessert.html"><img src="./asset/icone-dessert.png" alt="Icone dessert">Nos desserts</a></li>
                         </ul>
                     </nav>
@@ -68,48 +68,55 @@
                         </figure>
                     </div>
                     <div class="img-menu">
-                        <figure>
+                        <figure data-burger-name="Salade Tasty" data-burger-price="6.50" data-burger-image="./asset/salade1">
                             <figcaption>
                                 <p>Salade Tasty <br>6.50€</p>
                             </figcaption>
                             <img src="./asset/salade1" alt="Image burger Tasty">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="L'européenne" data-burger-price="5.50" data-burger-image="./asset/salade2.jpg">
                             <figcaption>
                                 <p>L'européenne <br>5.50€</p>
                             </figcaption>
                             <img src="./asset/salade2.jpg" alt="Donnut burger">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Paradise" data-burger-price="4.50" data-burger-image="./asset/salade3.jpg">
                             <figcaption>
                                 <p>Paradise <br>4.50€</p>
                             </figcaption>
                             <img src="./asset/salade3.jpg" alt="Image burger végétal">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Classique" data-burger-price="6.50" data-burger-image="./asset/salade4.jpg">
                             <figcaption>
                                 <p>Classique <br>6.50€</p>
                             </figcaption>
                             <img src="./asset/salade4.jpg" alt="Image classique">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Jungle Tasty" data-burger-price="7" data-burger-image="./asset/salade5.jpg">
                             <figcaption>
                                 <p>Jungle Tasty <br>7€</p>
                             </figcaption>
                             <img src="./asset/salade5.jpg" alt="Image Cheddar-Bacon-Caramélisé">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Good Tasty" data-burger-price="9" data-burger-image="./asset/salade6.jpg">
                             <figcaption>
                                 <p>Good Tasty <br>9€</p>
                             </figcaption>
                             <img src="./asset/salade6.jpg" alt="Image Le régional">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="La nicoise" data-burger-price="8.50" data-burger-image="./asset/salade7.jpg">
                             <figcaption>
                                 <p>La nicoise <br>8.50€</p>
                             </figcaption>
                             <img src="./asset/salade7.jpg" alt="Image Le créatif">
                         </figure>
+                    </div>
+                    <div id="popupAjoutPanier" class="hidden">
+                        <h4>Le Bon Gout</h4>
+                        <p id="popup-content"></p>
+                        <img id="popup-image" src="">
+                        <span class="close"><ion-icon name="close-outline" alt="Image du produit"></ion-icon></span>
+                        <button>Ajouter au panier</button> 
                     </div>
                     <div class="section-menu-burger">
                         <h2>Le Bont Gout</h2>
@@ -137,7 +144,7 @@
                         <li class="separateur"></li>
                         <li><a href="./boisson.html"><img src="./asset/icone-boisson-rouge.png" alt="Icone boissons">Nos boissons</a></li>
                         <li class="separateur"></li>
-                        <li><a href="#"><img src="./asset/icone-snack-rouge.png" alt="Icone Snack">Snacks</a></li>
+                        <li><a href="./chicken.html"><img src="./asset/icone-snack-rouge.png" alt="Icone Snack">Chicken Tasty</a></li>
                         <li class="separateur"></li>
                         <li><a href="./dessert.html"><img src="./asset/icone-dessert-rouge.png" alt="Icone dessert">Nos desserts</a></li>
                     </ul>
@@ -153,5 +160,8 @@
         </figure>
     </footer>
     <script src="./pages.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./ajoutPanier.js"></script>
 </body>
 </html>

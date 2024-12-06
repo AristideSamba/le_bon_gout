@@ -3,6 +3,7 @@ const popup = document.getElementById('popupAjoutPanier');
 const popupContent = popup.querySelector('p');
 const popupImage = popup.querySelector('img:not(.close)'); // Sélectionne la deuxième image (l'image du burger)
 const closeButton = popup.querySelector('.close');
+
 // Initialiser l'image avec la valeur de data-src
 popupImage.src = popupImage.dataset.src;
 
@@ -12,7 +13,7 @@ images.forEach(figure => {
     const burgerPrice = figure.dataset.burgerPrice;
     const burgerImage = figure.dataset.burgerImage;
 
-    popupContent.textContent = `${burgerName}  ${burgerPrice}€`;
+    popupContent.innerHTML = `${burgerName}<br>${burgerPrice}€`;
     popupImage.src = burgerImage;
 
     popup.classList.remove('hidden');

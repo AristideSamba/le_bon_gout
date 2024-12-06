@@ -55,7 +55,7 @@
                             <li><a href="./sandwich.html"><img src="./asset/icon-sandwich.png" alt="Icone Sandwich"> Nos sandwichs</a></li>
                             <li><a href="./salade.html"><img src="./asset/icone-salade.png" alt="Icone salade"> Nos salades</a></li>
                             <li><a href="./boisson.html"><img src="./asset/icone-boisson.png" alt="Icone boissons">Nos boissons</a></li>
-                            <li><a href="#"><img src="./asset/icone-snack-bar.png" alt="Icone snack">Snacks</a></li>
+                            <li><a href="./chicken.html"><img src="./asset/icone-snack-bar.png" alt="Icone snack">Chicken Tasty</a></li>
                             <li><a href="./dessert.html"><img src="./asset/icone-dessert.png" alt="Icone dessert">Nos desserts</a></li>
                         </ul>
                     </nav>
@@ -68,54 +68,61 @@
                         </figure>
                     </div>
                     <div class="img-menu">
-                        <figure>
+                        <figure data-burger-name="Bon plans Tasty" data-burger-price="6.50" data-burger-image="./asset/bonplan1.jpg">
                             <figcaption>
                                 <p>Bon plans Tasty<br>6.50€</p>
                             </figcaption>
                             <img src="./asset/bonplan1.jpg" alt="Image burger Tasty">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Les touterreaux" data-burger-price="6" data-burger-image="./asset/bonplan2.jpg">
                             <figcaption>
                                 <p>Les touterreaux<br>6€</p>
                             </figcaption>
                             <img src="./asset/bonplan2.jpg" alt="Donnut burger">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Good Tasty" data-burger-price="4" data-burger-image="./asset/bonplan3.jpg">
                             <figcaption>
                                 <p>Good tasty<br>4€</p>
                             </figcaption>
                             <img src="./asset/bonplan3.jpg" alt="Image burger végétal">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Big Tasty" data-burger-price="5" data-burger-image="./asset/bonplan4.jpg">
                             <figcaption>
                                 <p>Big tasty<br>5€</p>
                             </figcaption>
                             <img src="./asset/bonplan4.jpg" alt="Image classique">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Frittes Tasty" data-burger-price="5" data-burger-image="./asset/bonplan5.jpg">
                             <figcaption>
                                 <p>Frittes tasty<br>5€</p>
                             </figcaption>
                             <img src="./asset/bonplan5.jpg" alt="Image Cheddar-Bacon-Caramélisé">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="L'européenne" data-burger-price="6.50" data-burger-image="./asset/bonplan6.jpg">
                             <figcaption>
                                 <p>L'européenne<br>6.50€</p>
                             </figcaption>
                             <img src="./asset/bonplan6.jpg" alt="Image Le régional">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Les délices" data-burger-price="4" data-burger-image="./asset/bonplan7.jpg">
                             <figcaption>
                                 <p>Les délices<br>4€</p>
                             </figcaption>
                             <img src="./asset/bonplan7.jpg" alt="Image Le créatif">
                         </figure>
-                        <figure>
+                        <figure data-burger-name="Le Petit Prince" data-burger-price="5" data-burger-image="./asset/burger-menu8.png">
                             <figcaption>
                                 <p>Le Petit Prince<br>5€</p>
                             </figcaption>
                             <img src="./asset/burger-menu8.png" alt="Image Le Petit Prince">
                         </figure>
+                    </div>
+                    <div id="popupAjoutPanier" class="hidden">
+                        <h4>Le Bon Gout</h4>
+                        <p id="popup-content"></p>
+                        <img id="popup-image" src="">
+                        <span class="close"><ion-icon name="close-outline" alt="Image du produit"></ion-icon></span>
+                        <button>Ajouter au panier</button> 
                     </div>
                     <div class="section-menu-burger">
                         <h2>Le Bont Gout</h2>
@@ -143,7 +150,7 @@
                         <li class="separateur"></li>
                         <li><a href="./boisson.html"><img src="./asset/icone-boisson-rouge.png" alt="Icone boissons">Nos boissons</a></li>
                         <li class="separateur"></li>
-                        <li><a href="#"><img src="./asset/icone-snack-rouge.png" alt="Icone Snack">Snacks</a></li>
+                        <li><a href="./chicken.html"><img src="./asset/icone-snack-rouge.png" alt="Icone Snack">Chicken Tasty</a></li>
                         <li class="separateur"></li>
                         <li><a href="./dessert.html"><img src="./asset/icone-dessert-rouge.png" alt="Icone dessert">Nos desserts</a></li>
                     </ul>
@@ -159,5 +166,8 @@
         </figure>
     </footer>
     <script src="./pages.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./ajoutPanier.js"></script>
 </body>
 </html>
